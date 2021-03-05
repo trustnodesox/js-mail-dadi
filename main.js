@@ -1,6 +1,6 @@
 var email = prompt("Inserisci la tua email!");
 
-var whitelist = ("lollodesossi@gmail.com", "pippo@gmail.com", "pluto@gmail.com");
+var whitelist = ["lollodesossi@gmail.com", "pippo@gmail.com", "pluto@gmail.com"];
 
 var convalida = false;
 
@@ -10,7 +10,7 @@ for (var i = 0; i < whitelist.length; i++){
   }
 }
 
-if (convalida) {
+if (convalida === false) {
   document.getElementById("verifica").innerHTML = "Mi dispiace, non puoi accedere a questo sito!"
 } else {
   document.getElementById("verifica").innerHTML = "Complimenti, la tua email è registrata!"
